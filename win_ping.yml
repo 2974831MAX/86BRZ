@@ -1,0 +1,13 @@
+---
+
+- name : Excecut PowerShell file(ps1)
+  hosts: all
+  gather_facts: false
+  tasks:
+    # Example read-write git checkout from github
+#  - git:
+#      repo: git@github.com:mylogin/hello.git
+#      https://github.com/kashiwameshi/Mackerel.git
+#      dest: /home/mylogin/hello
+    - name: pingpong
+      win_ping:

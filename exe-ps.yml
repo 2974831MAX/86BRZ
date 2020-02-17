@@ -1,0 +1,14 @@
+---
+
+- name : Excecut PowerShell file(ps1)
+  hosts: htnpc1072
+  gather_facts: false
+  tasks:
+    # Example read-write git checkout from github
+#  - git:
+#      repo: git@github.com:mylogin/hello.git
+#      https://github.com/kashiwameshi/Mackerel.git
+#      dest: /home/mylogin/hello
+
+  - name: get mackerel data
+    script: files/get-host_memuser.ps1
